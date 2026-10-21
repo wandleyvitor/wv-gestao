@@ -1,6 +1,14 @@
 # WV Gestão — Vendas e Estoque
 
-Aplicação de portfólio de **Wandley Vitor**, desenvolvida com assistência de IA. Demonstração local, sem clientes reais, sem pagamentos e sem emissão fiscal.
+Aplicação de portfólio de **Wandley Vitor**, desenvolvida com assistência de IA. Demonstração de portfólio, sem clientes reais, sem pagamentos e sem emissão fiscal.
+
+## Acesse a demonstração online
+
+### [🌐 Abrir o WV Gestão](https://wv-gestao.sappy-jam-4578.chatgpt.site)
+
+Abra pelo computador ou celular, sem instalar nada. Explore o dashboard, os gráficos, os filtros de período, o catálogo, o estoque, o histórico de vendas e a exportação CSV.
+
+A versão pública usa dados fictícios de setembro e outubro de 2026 e funciona **somente para consulta**. Cadastros, movimentações e cancelamentos estão disponíveis na aplicação local descrita abaixo. O banco e a API Python locais não estão expostos no site.
 
 Para começar pelo conceito, leia [Entenda o projeto](docs/ENTENDA_O_PROJETO.md). A documentação de validação está em [Validação](docs/VALIDACAO.md).
 
@@ -127,7 +135,7 @@ Cancelar uma venda a remove dos indicadores de seu período original, mesmo que 
 Campos com sufixo `_cents` representam centavos, sem casas decimais. Quantidades negativas nas movimentações são saídas. Itens exportados incluem a coluna `canceled` para filtrar cancelamentos. Produtos e movimentações exportam todo o histórico; itens e indicadores usam o período da tela. Textos começando com `=`, `+`, `-`, `@` ou controles são prefixados com apóstrofo para evitar execução de fórmulas. Não remova essa proteção ao importar dados não confiáveis.
 
 ## Segurança e limitações
-Somente uso local. Os serviços escutam em `127.0.0.1`; CORS permite apenas `localhost:5173` e `127.0.0.1:5173`. CORS não substitui autenticação. Antes de disponibilizar na internet, implementar autenticação, autorização, proteção contra requisições indevidas, limites de uso, auditoria, backups, TLS e revisão de segurança.
+O backend e os recursos de alteração são somente para uso local. A demonstração pública acima é uma interface estática de consulta com dados fictícios. Os serviços escutam em `127.0.0.1`; CORS permite apenas `localhost:5173` e `127.0.0.1:5173`. CORS não substitui autenticação. Antes de disponibilizar na internet, implementar autenticação, autorização, proteção contra requisições indevidas, limites de uso, auditoria, backups, TLS e revisão de segurança.
 
 Sem pagamentos, integração bancária, nota fiscal, cálculo de lucro, custos, descontos, clientes ou permissões por usuário. Histórico não tem endpoints de exclusão ou alteração. A demonstração local permite datas retroativas e entradas em produtos desativados. A validação protege o fluxo da aplicação; edição manual do banco pode violar regras de saldo e não é suportada.
 
