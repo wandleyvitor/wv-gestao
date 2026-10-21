@@ -4,6 +4,8 @@ Aplicação de portfólio de **Wandley Vitor**, desenvolvida com assistência de
 
 Para começar pelo conceito, leia [Entenda o projeto](docs/ENTENDA_O_PROJETO.md). A documentação de validação está em [Validação](docs/VALIDACAO.md).
 
+![Dashboard com dados fictícios](docs/dashboard-desktop.jpg)
+
 ## O problema
 Pequenos negócios precisam conferir o que foi vendido, o que ainda está disponível e quais produtos precisam de reposição. O WV Gestão organiza esse fluxo e transforma o histórico de vendas em indicadores. Esta versão não foi utilizada por clientes nem demonstra resultados comerciais reais.
 
